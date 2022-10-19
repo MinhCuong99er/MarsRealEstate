@@ -23,7 +23,7 @@ import { Voucher } from '@src/interfaces/Voucher'
 import { Product } from '@src/interfaces/Product'
 import { CartType } from '@src/interfaces/enums'
 
-const PageViewHandler = dynamic(() => import('@src/components/SwapGift'), {
+const PageViewHandler = dynamic(() => import('@src/components/home'), {
   ssr: false,
   loading: () => <PageLoading />,
 })
