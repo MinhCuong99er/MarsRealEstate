@@ -1,0 +1,82 @@
+/*---------- example css ----------*/
+.md-terms-accordion {
+  &__item {
+    border: 0 !important;
+    border-radius: 0 !important;
+    &__header {
+      border-bottom: 1px solid $color-black;
+      button {
+        background-color: $color-white !important;
+        color: $color-black !important;
+        text-transform: uppercase;
+        border-radius: 0;
+        &::after {
+          filter: brightness(0);
+          @include transition-default;
+        }
+        &:focus {
+          outline: none;
+          border: 0;
+          @include box-shadow(none);
+        }
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+    &__body {
+      background-color: $color-white;
+    }
+  }
+}
+
+.md-terms-title {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 30px;
+  color: $color-secondary;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+//example responsive css
+@media (min-width: $screen-sm-min) {
+  //mobile lanscape
+}
+@media (min-width: 414px) {
+  //mobile lanscape
+}
+@media (min-width: $screen-md-min) {
+  //ipad portrait
+}
+@media (min-width: $screen-lg-min) {
+  //ipad lanscape & pc 1024x768px
+}
+@media (min-width: $screen-xl-min) {
+  //pc & mac 1280px grow up
+  .md-terms-accordion {
+    &__item {
+      &__header {
+        button {
+          padding: 16px 0;
+          background-color: $color-white !important;
+          color: $color-black !important;
+          &::after {
+            filter: brightness(0);
+          }
+        }
+      }
+      &__body {
+        background-color: $color-white;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  //pc & mac 1440px grow up
+}
+@media (min-width: 1900px) {
+  //pc & mac 1900px grow up
+}
+//end example responsive css
+/*---------- end example css ----------*/

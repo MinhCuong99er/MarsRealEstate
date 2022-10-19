@@ -1,0 +1,687 @@
+/*---------- example css ----------*/
+.md-point-history {
+  padding: 30px 0;
+  .is-row {
+    margin: 0 -11px 28px -11px;
+    .form-group {
+      width: percentage(1/2);
+      float: left;
+      padding: 0 11px;
+      position: relative;
+      z-index: 1;
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top: 12px;
+        right: 20px;
+        width: 18px;
+        height: 18px;
+        background-image: url('/images/calendar-icon.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        pointer-events: none;
+      }
+      input {
+        width: 100%;
+        height: 43px;
+        color: $color-secondary;
+        font-size: 16px;
+        background: $color-bg3;
+        @include border-radius(7px);
+        border: 0;
+        @include box-shadow(none);
+        padding: 0 15px;
+      }
+    }
+  }
+  .btn {
+    font-size: 20px;
+    width: 100%;
+    @include transition-default;
+  }
+}
+.md-point-historytab {
+  .is-tab {
+    margin-bottom: 26px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        width: percentage(1/2);
+        float: left;
+        cursor: pointer;
+        &.active {
+          span {
+            border-bottom: 1px solid $color-secondary;
+            color: $color-secondary;
+          }
+        }
+        span {
+          display: block;
+          padding: 13px 0;
+          border-bottom: 1px solid #413f48;
+          color: $color-black;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .is-tabcontent {
+    padding: 0 20px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #413f48;
+        margin-bottom: 10px;
+        .is-left {
+          width: 60%;
+          padding-right: 10px;
+          b {
+            // color: $color-placeholder;
+            color: $color-black;
+            display: block;
+          }
+          span {
+            color: $color-black;
+            display: block;
+          }
+        }
+        .is-right {
+          justify-content: flex-end;
+          width: 40%;
+          display: flex;
+          align-items: center;
+          color: $color-secondary;
+          text-align: right;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+.md-givepoint {
+  padding: 30px 0;
+  &__point {
+    padding: 0 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .is-left {
+      font-size: 13px;
+      color: $color-black;
+    }
+    .is-right {
+      font-size: 13px;
+      color: $color-black;
+      b {
+        font-weight: 400;
+      }
+    }
+  }
+  &__form {
+    padding: 14px 17px;
+    background: $color-bg3;
+    @include border-radius(7px);
+    margin-bottom: 30px;
+    .is-title {
+      color: $color-black;
+      font-size: 13px;
+      margin-bottom: 20px;
+      display: block;
+    }
+    .is-text.form-group {
+      position: relative;
+      .spinner-wrapper {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 1px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        span {
+          color: $color-secondary;
+        }
+      }
+    }
+    .is-text {
+      margin-bottom: 20px;
+      .form-control {
+        background: transparent;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid #707070;
+        color: $color-black;
+        @include placeholder(#707070, $font-sour);
+        font-size: 13px;
+        padding: 0 0 5px 0;
+      }
+      .form-control.is-invalid {
+        border-bottom: 1px solid var(--bs-red);
+        &:focus {
+          border-color: none !important;
+          box-shadow: none !important;
+          outline: none;
+        }
+      }
+      .form-control.is-valid {
+        border-bottom: 1px solid var(--bs-success);
+        &:focus {
+          border-color: none !important;
+          box-shadow: none !important;
+          outline: none;
+        }
+      }
+      .is-name {
+        color: $color-black;
+        font-size: 13px;
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+    .is-area {
+      margin-top: 15px;
+      textarea {
+        width: 100%;
+        text-align: center;
+        background: $color-white;
+        @include border-radius(7px);
+        height: 71px;
+        padding: 13px;
+        @include placeholder(#707070, $font-sour);
+        color: $color-black;
+        font-size: 13px;
+        border: 1px solid transparent;
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: space-evenly;
+    .btn {
+      width: 138px;
+      color: $color-white;
+      @include border-radius(5px);
+    }
+  }
+}
+.md-invite {
+  padding: 25px 27px;
+  .is-guide {
+    color: $color-black;
+    line-height: 1.4;
+    text-align: justify;
+  }
+  .box-myinvide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__code {
+      flex: 5 4 auto;
+      margin-bottom: inherit;
+      .is-content {
+        width: auto !important;
+      }
+      .is-copy {
+        width: auto !important;
+        padding: 7px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+      }
+    }
+    &__qrcode {
+      flex: 0 1 100px;
+      margin-left: 10px;
+      padding: 3px;
+      & > div:first-child {
+        color: $color-black;
+        margin-bottom: 5px;
+      }
+      & > div:last-child {
+        background: #fff;
+      }
+    }
+  }
+  &__item {
+    margin-bottom: 25px;
+    .is-title {
+      display: block;
+      color: $color-black;
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+    .is-box {
+      overflow: hidden;
+      @include border-radius(7px);
+      display: flex;
+      .is-invitecode {
+        width: percentage(275/360);
+        height: 43px;
+        background: #e6e6e6;
+        input {
+          width: 100%;
+          height: 100%;
+          padding-left: 10px;
+          &::placeholder {
+            color: $color-placeholder;
+          }
+        }
+      }
+      .is-invitecode.form-group {
+        position: relative;
+        .spinner-wrapper {
+          position: absolute;
+          top: 14px;
+          right: 10px;
+          span {
+            color: $color-secondary;
+            // width: 1.3rem;
+            // height: 1.3rem;
+          }
+        }
+      }
+      .is-content {
+        width: percentage(275/360);
+        height: 43px;
+        background: #e6e6e6;
+        display: flex;
+        align-items: center;
+        padding: 0 13px;
+        span {
+          display: none;
+        }
+        b {
+          color: $color-black;
+          font-weight: 400;
+          word-break: break-word;
+          &.is-id {
+            font-size: 20px;
+            color: $color-secondary;
+          }
+          &.is-link {
+            @include text-shorten();
+          }
+        }
+      }
+      .is-copy {
+        width: percentage(85/360);
+        height: 43px;
+        background: $color-secondary;
+        color: $color-white;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+  }
+  &__item:last-child {
+    margin-bottom: inherit;
+    margin-top: 25px;
+  }
+}
+@media (min-width: 400px) {
+  .md-invite {
+    .box-myinvide {
+      &__qrcode {
+        zoom: 1.3;
+      }
+    }
+  }
+}
+@media (min-width: 425px) {
+  .md-invite {
+    .box-myinvide {
+      &__qrcode {
+        zoom: 1.4;
+      }
+    }
+  }
+}
+//example responsive css
+@media (min-width: $screen-sm-min) {
+  //mobile lanscape
+  .md-point-history {
+    .is-row {
+      .form-group {
+        &:before {
+          content: '';
+          right: 20px;
+        }
+        input {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $screen-md-min) {
+  //ipad portrait
+}
+@media (min-width: $screen-lg-min) {
+  //ipad lanscape & pc 1024x768px
+  .md-invite {
+    padding: 46px 0px;
+    width: 80%;
+    margin: auto;
+    &__title {
+      text-align: center;
+      font-size: 30px;
+      color: $color-secondary;
+      font-weight: 700;
+      margin-bottom: 45px;
+    }
+    .is-guide {
+      padding: 10px;
+      color: #818285;
+      line-height: 1.5;
+    }
+    .box-myinvide {
+      align-items: center;
+      &__code {
+        flex: 5 4 auto;
+        .is-content {
+          width: percentage(1096/1352) !important;
+        }
+        .is-copy {
+          width: percentage(266/1352) !important;
+          border-top-right-radius: 7px;
+          border-bottom-right-radius: 7px;
+        }
+      }
+      &__qrcode {
+        flex: 0 1 150px;
+        margin-left: 10px;
+        padding: 3px;
+        & > div:first-child {
+          color: $color-primary;
+        }
+        & > div:last-child {
+          border: 1px solid $color-primary;
+          border-radius: 7px;
+        }
+      }
+    }
+    &__item {
+      margin-bottom: 25px;
+      .is-title {
+        display: none;
+      }
+      .is-box {
+        overflow: hidden;
+        @include border-radius(7px);
+        display: flex;
+
+        .is-invitecode {
+          input {
+            border: none;
+            outline: none;
+            padding-left: 2px;
+            color: $color-primary;
+            &:focus {
+              border: none !important;
+            }
+          }
+        }
+        .is-invitecode.form-group {
+          position: relative;
+          .spinner-wrapper {
+            position: absolute;
+            top: 19px;
+            right: 10px;
+            span {
+              color: $color-secondary;
+              width: 1.3rem;
+              height: 1.3rem;
+            }
+          }
+        }
+
+        .is-content,
+        .is-invitecode {
+          width: percentage(1146/1352);
+          height: 58px;
+          background: transparent;
+          align-items: flex-start;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 13px;
+          border-bottom: 1px solid $color-placeholder;
+          span {
+            display: block;
+            font-size: 18px;
+            // color: $color-placeholder;
+            color: $color-black;
+            margin-bottom: 10px;
+          }
+          b {
+            color: $color-primary;
+            font-size: 18px;
+            &.is-id {
+              font-size: 18px;
+            }
+          }
+        }
+        .is-copy {
+          width: percentage(206/1352);
+          height: 58px;
+          font-size: 20px;
+          @include transition-default;
+          &:hover {
+            background: $color-primary;
+          }
+        }
+      }
+    }
+  }
+  .md-givepoint {
+    padding: 46px 0;
+    background: #f0f0f0;
+    min-height: calc(100vh - 145px);
+    &__box {
+      width: 80%;
+      margin: auto;
+    }
+    &__title {
+      color: $color-secondary;
+      text-align: center;
+      margin-bottom: 45px;
+      font-weight: 700;
+      font-size: 30px;
+    }
+    &__point {
+      padding: 16px 17px;
+      background: $color-white;
+      margin-bottom: 20px;
+      border: 1px solid #d5d5d5;
+      .is-left {
+        font-size: 20px;
+        color: $color-bg1;
+      }
+      .is-right {
+        font-size: 20px;
+        color: $color-bg1;
+        b {
+          font-weight: 500;
+          color: $color-secondary;
+        }
+      }
+    }
+    &__form {
+      padding: 16px 17px;
+      background: $color-white;
+      @include border-radius(0);
+      margin-bottom: 15px;
+      .is-title {
+        color: $color-bg1;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .is-text {
+        margin-bottom: 25px;
+        .form-control {
+          border-bottom: 1px solid #b1b1b1;
+          color: $color-bg1;
+          @include placeholder(#b1b1b1, $font-roboto);
+          font-size: 20px;
+          background: $color-white;
+        }
+        .is-name {
+          color: $color-bg1;
+          font-size: 20px;
+        }
+      }
+      .is-area {
+        textarea {
+          background: #f0f0f0;
+          @include border-radius(7px);
+          height: 75px;
+          padding: 13px;
+          @include placeholder(#b1b1b1, $font-roboto);
+          color: $color-bg1;
+          font-size: 20px;
+        }
+      }
+    }
+    &__btn {
+      display: flex;
+      justify-content: space-between;
+      .btn {
+        width: 270px;
+        height: 45px;
+        color: $color-white;
+        @include border-radius(5px);
+        font-size: 18px;
+        @include transition-default;
+        &:hover {
+          background: $color-primary;
+        }
+      }
+    }
+  }
+  .md-point-history {
+    padding: 32px 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    @include box-shadow(0 0 20px rgba($color-black, 0.16));
+    max-width: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    &__title {
+      color: $color-secondary;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .is-row {
+      margin: 0 auto 32px auto;
+      width: 70%;
+      .form-group {
+        padding: 0 11px;
+        &:before {
+          content: '';
+          top: 12px;
+          right: 26px;
+          width: 21px;
+          height: 21px;
+        }
+        input {
+          height: 48px;
+          font-size: 20px;
+          background: #f0f0f0;
+          @include border-radius(7px);
+          padding: 0 12px;
+        }
+      }
+    }
+    .btn {
+      font-size: 20px;
+      width: calc(70% - 22px);
+      margin-left: 11px;
+      margin: auto;
+      display: block;
+    }
+  }
+  .md-point-historytab {
+    max-width: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    .is-tab {
+      margin-bottom: 30px;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          width: percentage(1/2);
+          float: left;
+          cursor: pointer;
+          &.active {
+            span {
+              border-bottom: 1px solid $color-secondary;
+              color: $color-secondary;
+            }
+          }
+          span {
+            padding: 11px 0;
+            border-bottom: 1px solid #eaeaea;
+            color: $color-primary;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .is-tabcontent {
+      padding: 0;
+      ul {
+        li {
+          padding-bottom: 13px;
+          border-bottom: 1px solid #413f48;
+          margin-bottom: 30px;
+          .is-left {
+            width: 60%;
+            padding-right: 10px;
+            b {
+              color: $color-black;
+              font-size: 20px;
+              margin-bottom: 5px;
+            }
+            span {
+              color: $color-primary;
+              font-size: 20px;
+            }
+          }
+          .is-right {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: $screen-xl-min) {
+  //pc & mac 1280px grow up
+}
+@media (min-width: 1440px) {
+  //pc & mac 1440px grow up
+}
+@media (min-width: 1900px) {
+  //pc & mac 1900px grow up
+}
+//end example responsive css
+/*---------- end example css ----------*/

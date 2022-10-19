@@ -1,0 +1,508 @@
+{
+  "RECORDS": [
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "201",
+      "name": "Hà Nội",
+      "type": "",
+      "sortIndex": "1"
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "202",
+      "name": "Hồ Chí Minh",
+      "type": "",
+      "sortIndex": "2"
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "203",
+      "name": "Đà Nẵng",
+      "type": "",
+      "sortIndex": "3"
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "204",
+      "name": "Đồng Nai",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "205",
+      "name": "Bình Dương",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "206",
+      "name": "Bà Rịa - Vũng Tàu",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "207",
+      "name": "Gia Lai",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "208",
+      "name": "Khánh Hòa",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "209",
+      "name": "Lâm Đồng",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "210",
+      "name": "Đắk Lắk",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "211",
+      "name": "Long An",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "212",
+      "name": "Tiền Giang",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "213",
+      "name": "Bến Tre",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "214",
+      "name": "Trà Vinh",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "215",
+      "name": "Vĩnh Long",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "216",
+      "name": "Đồng Tháp",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "217",
+      "name": "An Giang",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "218",
+      "name": "Sóc Trăng",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "219",
+      "name": "Kiên Giang",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "220",
+      "name": "Cần Thơ",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "221",
+      "name": "Vĩnh Phúc",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "223",
+      "name": "Thừa Thiên - Huế",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "224",
+      "name": "Hải Phòng",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "225",
+      "name": "Hải Dương",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "226",
+      "name": "Thái Bình",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "227",
+      "name": "Hà Giang",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "228",
+      "name": "Tuyên Quang",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "229",
+      "name": "Phú Thọ",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "230",
+      "name": "Quảng Ninh",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "231",
+      "name": "Nam Định",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "232",
+      "name": "Hà Nam",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "233",
+      "name": "Ninh Bình",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "234",
+      "name": "Thanh Hóa",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "235",
+      "name": "Nghệ An",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "236",
+      "name": "Hà Tĩnh",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "237",
+      "name": "Quảng Bình",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "238",
+      "name": "Quảng Trị",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "239",
+      "name": "Bình Phước",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "240",
+      "name": "Tây Ninh",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "241",
+      "name": "Đắk Nông",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "242",
+      "name": "Quảng Ngãi",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "243",
+      "name": "Quảng Nam",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "244",
+      "name": "Thái Nguyên",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "245",
+      "name": "Bắc Kạn",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "246",
+      "name": "Cao Bằng",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "247",
+      "name": "Lạng Sơn",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "248",
+      "name": "Bắc Giang",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "249",
+      "name": "Bắc Ninh",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "250",
+      "name": "Hậu Giang",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "252",
+      "name": "Cà Mau",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "253",
+      "name": "Bạc Liêu",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "258",
+      "name": "Bình Thuận",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "259",
+      "name": "Kon Tum",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "260",
+      "name": "Phú Yên",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "261",
+      "name": "Ninh Thuận",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "262",
+      "name": "Bình Định",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "263",
+      "name": "Yên Bái",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "264",
+      "name": "Lai Châu",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "265",
+      "name": "Điện Biên",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "266",
+      "name": "Sơn La",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "267",
+      "name": "Hòa Bình",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "268",
+      "name": "Hưng Yên",
+      "type": "",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1617184873740",
+      "updatedAt": "1617184873740",
+      "id": "269",
+      "name": "Lào Cai",
+      "type": "",
+      "sortIndex": ""
+    }
+  ]
+}

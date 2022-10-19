@@ -1,0 +1,74 @@
+.md-order-success {
+  padding: 13px 0;
+  &__image {
+    display: flex;
+    justify-content: center;
+  }
+  &__box {
+    background: $color-bg3;
+    border-radius: 6px;
+    padding: 8px 5px 8px 5px;
+    text-align: center;
+    p {
+      color: $color-black;
+      font-size: 18px;
+      text-align: left;
+    }
+    p:first-child {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  &__button {
+    text-align: center;
+    margin-top: 13px;
+  }
+}
+
+//example responsive css
+@media (min-width: $screen-sm-min) {
+  //mobile lanscape
+}
+
+@media (min-width: $screen-md-min) {
+  //ipad portrait
+}
+
+@media (min-width: $screen-lg-min) {
+  //ipad lanscape & pc 1024x768px
+  .md-order-success {
+    &__button {
+      margin-top: 28px;
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: space-evenly;
+      .btn {
+        width: 201px;
+        color: #fff;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-xl-min) {
+  //pc & mac 1280px grow up
+  .md-order-success {
+    &__box {
+      padding: 26px 0 20px 0;
+      p {
+        color: $color-black;
+        font-size: 25px;
+      }
+      p:first-child {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+//end example responsive css
+/*---------- end example css ----------*/

@@ -1,0 +1,690 @@
+/*---------- example css ----------*/
+.m-myvoucher {
+  padding-bottom: 20px;
+  &__tab {
+    margin-bottom: 13px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        padding: 10px 0;
+        width: percentage(1/2);
+        border-bottom: 1px solid #413f48;
+        float: left;
+        span {
+          display: block;
+          color: $color-black;
+          text-align: center;
+        }
+        &.active {
+          border-bottom: 1px solid $color-secondary;
+          span {
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+    &.is-4 {
+      ul {
+        li {
+          width: percentage(1/4);
+        }
+      }
+    }
+  }
+}
+.m-myvoucher-list {
+  padding: 0 12px;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin-bottom: 15px;
+    }
+  }
+  &__item {
+    background: $color-bg3;
+    padding: 10px 20px;
+    display: flex;
+    .is-left {
+      width: percentage(237/391);
+      .is-partner {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        .is-logo {
+          width: 36px;
+          height: 36px;
+          @include border-radius(50%);
+          overflow: hidden;
+          margin-right: 10px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .is-name {
+          font-weight: 600;
+          color: $color-title;
+          width: calc(100% - 36px);
+        }
+      }
+      .is-bottom {
+        padding-right: 15px;
+        .is-img {
+          @include border-radius(7px);
+          overflow: hidden;
+          margin-bottom: 5px;
+          img {
+            width: 100%;
+          }
+        }
+        .is-title {
+          @include excerpt(1, 2);
+          color: $color-black;
+          font-size: 12px;
+          margin-bottom: 10px;
+        }
+        .is-point {
+          color: $color-black;
+          font-size: 12px;
+          b {
+            color: $color-secondary;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .is-right {
+      width: percentage(154/391);
+      padding: 15px 5px 0 15px;
+      position: relative;
+      z-index: 1;
+      .is-code {
+        margin-bottom: 13px;
+        overflow-wrap: break-word;
+        span {
+          display: block;
+          color: $color-black;
+          font-size: 12px;
+        }
+        b {
+          display: block;
+          color: $color-black;
+          font-size: 12px;
+          font-weight: 600;
+        }
+      }
+      .is-bottom {
+        span {
+          display: block;
+          color: $color-black;
+          font-size: 12px;
+          margin-bottom: 5px;
+        }
+        .btn {
+          @include border-radius(5px);
+          background: $color-secondary;
+          font-size: 13px;
+          color: $color-white;
+          font-weight: 600;
+          padding: 5px 0;
+          width: 100%;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+.m-myvoucher-overlay {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  @include transition-all(0.2s);
+}
+.has-ovelay-show {
+  visibility: visible;
+  opacity: 1;
+  z-index: 98;
+}
+.m-myvoucher-scrollbottom {
+  height: 230px;
+  position: fixed;
+  overflow-y: scroll;
+  z-index: 99;
+  left: 0;
+  width: 100%;
+  bottom: -230px;
+  background: #2a282f;
+  @include transition-all(0.2s);
+  @include border-radius(20px 20px 0 0);
+  padding: 22px 12px;
+  overflow: hidden;
+  .is-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1a191e;
+    margin-bottom: 40px;
+    span {
+      color: $color-white;
+      font-size: 12px;
+      display: block;
+      width: 80%;
+    }
+  }
+  .is-scroll {
+    overflow-x: scroll;
+    padding-bottom: 20px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      white-space: nowrap;
+      li {
+        display: inline-block;
+        margin: 0 14px;
+        width: 67px;
+        height: 67px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+.has-menu-open {
+  transform: translate3d(0, -230px, 0);
+  -webkit-transform: translate3d(0, -230px, 0);
+}
+.md-voucher-onelist {
+  padding: 0 12px 20px;
+  cursor: pointer;
+  &.no-padding {
+    padding: 0 0 20px 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  &__item {
+    padding: 8px;
+    background: $color-bg3;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    .is-left {
+      display: flex;
+      align-items: center;
+      border-right: 1px solid $color-primary;
+      width: percentage(300/401);
+      &.is-statusbox {
+        width: percentage(276/414);
+      }
+      &.is-full {
+        width: calc(100% - 52px);
+        border-right: 0;
+        .is-check {
+          position: absolute;
+          z-index: 2;
+          top: 10px;
+          right: 10px;
+          color: $color-primary;
+          font-size: 13px;
+        }
+      }
+      .is-img {
+        position: relative;
+        z-index: 1;
+        width: 55px;
+        height: 55px;
+        @include border-radius(5px);
+        margin-right: 13px;
+        overflow: hidden;
+        img {
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          left: 50%;
+          @include transform(translateX(-50%));
+          height: 100%;
+        }
+      }
+      .is-des {
+        b {
+          color: $color-black;
+          margin-bottom: 7px;
+        }
+        span {
+          display: block;
+          color: $color-black;
+          font-size: 10px;
+          margin-bottom: 7px;
+          &:last-child {
+            margin-bottom: 0px;
+          }
+        }
+        &.is-statusbox {
+          b {
+            font-size: 13px;
+          }
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .is-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: percentage(101/401);
+      padding-left: 10px;
+      &.is-statusbox {
+        align-items: start;
+        width: percentage(138/414);
+        padding-right: 3px;
+      }
+      .is-used {
+        font-size: 12px;
+        color: $color-white;
+        background: $color-primary;
+        @include border-radius(3px);
+        padding: 4px 6px;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      .is-time {
+        display: block;
+        font-size: 10px;
+        color: $color-white;
+        text-align: center;
+      }
+      .is-status {
+        display: block;
+        font-size: 10px;
+        color: $color-black;
+        text-align: left;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        b {
+          font-weight: 700;
+          color: $color-secondary;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+.md-ordernone {
+  margin-top: 80px;
+  text-align: center;
+  .is-img {
+    width: 108px;
+    height: 108px;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    span {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-white;
+      font-size: 14px;
+    }
+  }
+}
+
+.m-orderstatus-modal {
+  .modal-content {
+    background: #e6e6e6;
+    @include border-radius(20px);
+  }
+  &__title {
+    font-size: 25px;
+    color: $color-secondary;
+  }
+  .statusbox {
+    padding: 15px 5px;
+    border-bottom: 1px solid gray;
+    span,
+    b {
+      display: block;
+      font-size: 18px;
+      padding: 5px;
+    }
+  }
+  .statusbox:last-child {
+    border-bottom: none;
+  }
+  &__id {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__order {
+    display: flex;
+    align-items: center;
+    &__img {
+      width: 30%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__money {
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__item:last-child {
+      color: $color-secondary;
+    }
+  }
+}
+
+.m-trade-history {
+  padding-bottom: 20px;
+  &__tab {
+    margin-bottom: 13px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        padding: 10px 0;
+        width: percentage(1/2);
+        float: left;
+        span {
+          display: block;
+          color: $color-black;
+          text-align: center;
+        }
+        &.active {
+          border-bottom: 1px solid $color-secondary;
+          background: $color-secondary;
+          span {
+            color: #fff;
+          }
+        }
+      }
+    }
+    &.is-4 {
+      ul {
+        li {
+          width: percentage(1/4);
+        }
+      }
+    }
+  }
+}
+//example responsive css
+@media (min-width: $screen-sm-min) {
+  //mobile lanscape
+  .m-myvoucher-list {
+    &__item {
+      position: relative;
+      z-index: 1;
+      .is-left {
+        position: relative;
+        z-index: 1;
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: 2;
+          top: -20px;
+          right: -11px;
+          width: 20px;
+          height: 20px;
+          background: $color-white;
+          @include border-radius(50%);
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          z-index: 2;
+          bottom: -20px;
+          right: -11px;
+          width: 20px;
+          height: 20px;
+          background: $color-white;
+          @include border-radius(50%);
+        }
+        .is-bottom {
+          padding-right: 30px;
+        }
+      }
+      .is-right {
+        padding: 15px 15px 0 30px;
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: 2;
+          top: 15px;
+          bottom: 15px;
+          left: 0;
+          width: 1px;
+          background: $color-primary;
+        }
+      }
+    }
+  }
+  .md-voucher-onelist {
+    &__item {
+      .is-right {
+        .is-used {
+          font-size: 13px;
+        }
+        .is-status {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $screen-md-min) {
+  //ipad portrait
+}
+@media (min-width: $screen-lg-min) {
+  //ipad lanscape & pc 1024x768px
+  .m-myvoucher {
+    padding-bottom: 40px;
+    &__tab {
+      width: 90%;
+      margin: 25px auto 31px auto;
+      ul {
+        li {
+          padding: 15px 0;
+          border: 1px solid #eaeaea;
+          color: #3c3b40;
+          @include transition-default;
+          position: relative;
+          z-index: 1;
+          cursor: pointer;
+          &:hover {
+            background: $color-secondary;
+            border: 1px solid $color-secondary;
+            span {
+              color: $color-white;
+            }
+          }
+          &.active {
+            border-bottom: 0;
+            color: $color-white;
+            background: $color-secondary;
+            border: 1px solid $color-secondary;
+            span {
+              color: $color-white;
+            }
+            &:before {
+              content: '';
+              position: absolute;
+              z-index: 2;
+              top: 100%;
+              left: 50%;
+              margin-left: -5px;
+              width: 0;
+              height: 0;
+              border-left: 10px solid transparent;
+              border-right: 10px solid transparent;
+              border-top: 10px solid $color-secondary;
+            }
+          }
+          span {
+            padding: 0;
+            border-bottom: 0;
+            font-size: 20px;
+            color: #3c3b40;
+            @include transition-default;
+          }
+        }
+      }
+    }
+    .md-voucher-list {
+      .container {
+        max-width: none;
+        width: 90%;
+      }
+    }
+  }
+  .md-voucher-onelist {
+    padding: 0;
+    width: 90%;
+    margin: auto;
+    ul {
+      li {
+        margin-bottom: 10px;
+      }
+    }
+    &__item {
+      padding: 20px 0px 20px 25px;
+      background: $color-white;
+      @include box-shadow(0 0 6px rgba($color-black, 0.16));
+      .is-left {
+        border-right: 1px solid #dbdbdb;
+        width: percentage(1239/1667);
+        &.is-full {
+          width: calc(100% - 105px);
+          .is-check {
+            top: 20px;
+            right: 25px;
+            font-size: 18px;
+          }
+        }
+        .is-img {
+          width: 110px;
+          height: 110px;
+          @include border-radius(0px);
+          margin-right: 26px;
+        }
+        .is-des {
+          b {
+            font-size: 18px;
+            color: $color-black;
+            margin-bottom: 7px;
+          }
+          span {
+            color: $color-black;
+            margin-bottom: 7px;
+            font-size: 18px;
+            &:last-child {
+              margin-bottom: 0px;
+            }
+          }
+          &.is-statusbox {
+            b {
+              font-size: 18px;
+            }
+            span {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .is-right {
+        width: percentage(428/1667);
+        padding-left: 15px;
+        &.is-statusbox {
+          padding-right: 23px;
+        }
+        .is-used {
+          font-size: 16px;
+          font-weight: 700;
+          color: $color-white;
+          background: $color-primary;
+          @include border-radius(10px);
+          padding: 6px 20px;
+          margin-bottom: 5px;
+        }
+        .is-time {
+          font-size: 14px;
+          color: $color-black;
+        }
+        .is-status {
+          font-size: 18px;
+          color: $color-black;
+          margin-bottom: 10px;
+          b {
+            display: inline-flex;
+          }
+        }
+      }
+    }
+  }
+  .md-ordernone {
+    margin-top: 83px;
+    .is-img {
+      width: 146px;
+      height: 146px;
+      span {
+        color: $color-black;
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media (min-width: $screen-xl-min) {
+  //pc & mac 1280px grow up
+}
+@media (min-width: 1440px) {
+  //pc & mac 1440px grow up
+  .md-ordernone {
+    margin-top: 166px;
+  }
+}
+@media (min-width: 1900px) {
+  //pc & mac 1900px grow up
+}
+//end example responsive css
+/*---------- end example css ----------*/

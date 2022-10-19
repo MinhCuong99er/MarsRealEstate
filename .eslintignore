@@ -1,0 +1,6 @@
+**/node_modules/*
+**/out/*
+**/.next/*
+**/public/*
+aws.deploy.main.yaml
+jkenv.json

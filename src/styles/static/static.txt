@@ -1,0 +1,7 @@
+//static folder
+css
+images
+js
+upload
+scss
+fonts

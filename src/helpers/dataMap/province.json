@@ -1,0 +1,516 @@
+{
+  "RECORDS": [
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "1",
+      "name": "T.P Hà Nội",
+      "type": "T.P Trung ương",
+      "sortIndex": "3"
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "2",
+      "name": "Tỉnh Hà Giang",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "4",
+      "name": "Tỉnh Cao Bằng",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "6",
+      "name": "Tỉnh Bắc Kạn",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "8",
+      "name": "Tỉnh Tuyên Quang",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "10",
+      "name": "Tỉnh Lào Cai",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "11",
+      "name": "Tỉnh Điện Biên",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "12",
+      "name": "Tỉnh Lai Châu",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "14",
+      "name": "Tỉnh Sơn La",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "15",
+      "name": "Tỉnh Yên Bái",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "17",
+      "name": "Tỉnh Hoà Bình",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "19",
+      "name": "Tỉnh Thái Nguyên",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "20",
+      "name": "Tỉnh Lạng Sơn",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "22",
+      "name": "Tỉnh Quảng Ninh",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "24",
+      "name": "Tỉnh Bắc Giang",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "25",
+      "name": "Tỉnh Phú Thọ",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "26",
+      "name": "Tỉnh Vĩnh Phúc",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "27",
+      "name": "Tỉnh Bắc Ninh",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "30",
+      "name": "Tỉnh Hải Dương",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "31",
+      "name": "T.P Hải Phòng",
+      "type": "T.P Trung ương",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "33",
+      "name": "Tỉnh Hưng Yên",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "34",
+      "name": "Tỉnh Thái Bình",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "35",
+      "name": "Tỉnh Hà Nam",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "36",
+      "name": "Tỉnh Nam Định",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "37",
+      "name": "Tỉnh Ninh Bình",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "38",
+      "name": "Tỉnh Thanh Hóa",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "40",
+      "name": "Tỉnh Nghệ An",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "42",
+      "name": "Tỉnh Hà Tĩnh",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "44",
+      "name": "Tỉnh Quảng Bình",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "45",
+      "name": "Tỉnh Quảng Trị",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "46",
+      "name": "Tỉnh Thừa Thiên Huế",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "48",
+      "name": "T.P Đà Nẵng",
+      "type": "T.P Trung ương",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "49",
+      "name": "Tỉnh Quảng Nam",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "51",
+      "name": "Tỉnh Quảng Ngãi",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "52",
+      "name": "Tỉnh Bình Định",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "54",
+      "name": "Tỉnh Phú Yên",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "56",
+      "name": "Tỉnh Khánh Hòa",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "58",
+      "name": "Tỉnh Ninh Thuận",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "60",
+      "name": "Tỉnh Bình Thuận",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "62",
+      "name": "Tỉnh Kon Tum",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "64",
+      "name": "Tỉnh Gia Lai",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "66",
+      "name": "Tỉnh Đắk Lắk",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "67",
+      "name": "Tỉnh Đắk Nông",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "68",
+      "name": "Tỉnh Lâm Đồng",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "70",
+      "name": "Tỉnh Bình Phước",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "72",
+      "name": "Tỉnh Tây Ninh",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "74",
+      "name": "Tỉnh Bình Dương",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "75",
+      "name": "Tỉnh Đồng Nai",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "77",
+      "name": "Tỉnh Bà Rịa - Vũng Tàu",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "79",
+      "name": "T.P Hồ Chí Minh",
+      "type": "T.P Trung ương",
+      "sortIndex": "2"
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "80",
+      "name": "Tỉnh Long An",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "82",
+      "name": "Tỉnh Tiền Giang",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "83",
+      "name": "Tỉnh Bến Tre",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "84",
+      "name": "Tỉnh Trà Vinh",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "86",
+      "name": "Tỉnh Vĩnh Long",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "87",
+      "name": "Tỉnh Đồng Tháp",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "89",
+      "name": "Tỉnh An Giang",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "91",
+      "name": "Tỉnh Kiên Giang",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "92",
+      "name": "T.P Cần Thơ",
+      "type": "T.P Trung ương",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "93",
+      "name": "Tỉnh Hậu Giang",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "94",
+      "name": "Tỉnh Sóc Trăng",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "95",
+      "name": "Tỉnh Bạc Liêu",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "96",
+      "name": "Tỉnh Cà Mau",
+      "type": "Tỉnh",
+      "sortIndex": ""
+    },
+    {
+      "createdAt": "1551375876335",
+      "updatedAt": "1551375876335",
+      "id": "100",
+      "name": "Tỉnh Toàn quốc",
+      "type": "Tỉnh",
+      "sortIndex": "1"
+    }
+  ]
+}

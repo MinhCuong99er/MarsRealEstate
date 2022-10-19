@@ -1,0 +1,28 @@
+/*---------- base css ----------*/
+body {
+  background: $color-bg;
+  font-family: $font-site;
+  font-size: $font-size-xs;
+  line-height: 1;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $font-site;
+}
+a {
+  color: $color-link;
+}
+a:focus {
+  outline: none;
+}
+/*---------- end base css ----------*/
