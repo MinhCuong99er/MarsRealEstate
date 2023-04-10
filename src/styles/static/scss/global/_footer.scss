@@ -1,84 +1,8 @@
 /*---------- example css ----------*/
-.m-footer {
-  background: $color-secondary;
-  height: 65px;
-  position: fixed;
-  z-index: 9;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  .container {
-    height: 100%;
-  }
-  &__list {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      width: 100%;
-      li {
-        float: left;
-        width: calc(100% / 4);
-      }
-    }
-  }
-  &__item {
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    img {
-      display: block;
-      margin: 0 auto 7px auto;
-      height: 20px;
-      width: auto;
-    }
-    span {
-      color: $color-white;
-      font-size: 12px;
-      &.is-active {
-        color: $color-mb-red;
-      }
-    }
-    .is-noti {
-      position: absolute;
-      z-index: 2;
-      top: -8px;
-      right: 50%;
-      width: 20px;
-      height: 20px;
-      margin-right: -20px;
-      background: $color-mb-red;
-      @include border-radius(50%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-}
-.d-footer {
-  padding: 15px 0;
-  // background: #c2002a;
-  background: #141ed2;
-  .d-footer-box {
-    text-align: center;
-    img {
-      height: 45px;
-    }
-  }
-}
+
 //example responsive css
 @media (min-width: $screen-sm-min) {
   //mobile lanscape
-  .m-footer {
-    &__item {
-      span {
-        font-size: 13px;
-      }
-    }
-  }
 }
 @media (min-width: $screen-md-min) {
   //ipad portrait
