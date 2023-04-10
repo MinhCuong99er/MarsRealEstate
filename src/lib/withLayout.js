@@ -28,7 +28,6 @@ if (typeof window !== 'undefined') {
   require('bootstrap')
   /* const Swiper = require('swiper')
   window.Swiper = Swiper
-  require('../../public/static/packages/jquery.nanogallery2.core')
   require('jquery-ui/ui/widgets/datepicker') */
   const AOS = require('aos')
   window.AOS = AOS

@@ -4,7 +4,7 @@ import { ToastContainer } from '@src/helpers/Toast'
 import { inject, observer } from 'mobx-react'
 import AuthStore from '@src/stores/auth.store'
 import { flowResult } from 'mobx'
-import { DEFAULT_REFRESH_INFO } from '@src/contains/contants'
+// import { DEFAULT_REFRESH_INFO } from '@src/contains/contants'
 import RootStore from '@src/stores/RootStore'
 
 interface LayoutProps {
@@ -16,7 +16,7 @@ const Layout: FC<LayoutProps> = (props: LayoutProps) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const router = useRouter()
   const { authStore } = props
-
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const refreshInfo = async () => {
     await flowResult(authStore?.getCustomerInfo())
   }
@@ -35,15 +35,15 @@ const Layout: FC<LayoutProps> = (props: LayoutProps) => {
       // }, 1000)
       // return () => clearTimeout(a)
     }
-    refreshInfo()
-    const refreshInfoSubcrice = setInterval(() => {
-      async function anyName() {
-        await flowResult(authStore?.getCustomerInfo())
-      }
-      anyName()
-    }, DEFAULT_REFRESH_INFO)
+    // refreshInfo()
+    // const refreshInfoSubcrice = setInterval(() => {
+    //   async function anyName() {
+    //     await flowResult(authStore?.getCustomerInfo())
+    //   }
+    //   anyName()
+    // }, DEFAULT_REFRESH_INFO)
 
-    return () => clearInterval(refreshInfoSubcrice)
+    // return () => clearInterval(refreshInfoSubcrice)
   }, [])
 
   // if (
