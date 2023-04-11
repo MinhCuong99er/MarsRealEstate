@@ -20,7 +20,8 @@ h6,
   font-family: $font-site;
 }
 a {
-  color: $color-link;
+  text-decoration: none;
+  color: #333;
 }
 a:focus {
   outline: none;
