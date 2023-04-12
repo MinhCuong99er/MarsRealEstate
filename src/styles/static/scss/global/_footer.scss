@@ -1,5 +1,92 @@
 /*---------- example css ----------*/
+.footer-brand-slide {
+  border-bottom: 2px solid #222;
+  border-top: 2px solid #222;
+  padding: 10px 0px;
+}
 
+.footer-brand-slide img {
+  width: 100px;
+  height: 70px;
+}
+
+/* footer-policy */
+.footer-policy {
+  padding: 10px 0px;
+  border-bottom: 2px solid #222;
+}
+
+.footer-policy ul, 
+.footer-policy ul li {
+  margin: 0;
+  padding: 0;
+}
+.footer-policy ul li {
+  list-style-type: none;
+}
+
+.footer-policy .cgv-premission{
+  background: url('/images/cong-thuong.PNG') no-repeat scroll top left transparent;
+  width: 200px;
+  height: 70px;
+}
+
+/* .footer-address */
+.footer-address {
+  padding: 20px 0;
+}
+
+.footer-address  h3,
+.footer-policy h3 {
+  font-size: 18px;
+}
+
+.footer-address  p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-address 
+.logo-cgv {
+  background-image: url('/images/logo-cj-cgv.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: left;
+}
+
+/* .bg-footer */
+.bg-footer {
+  background-image: url('/images/bg-bottom-footer.jpg');
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+.icon-follow ul li{
+  display: inline;
+}
+.zoom-icon{
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+}
+.zoom-icon:hover{
+  transition: 0.2s;
+  transform: scale(1.4);
+}
+#fb{
+  background: url('/images/bg-icon-follow-list.png') -6px 0px; 
+}
+#youtube{
+  background: url('/images/bg-icon-follow-list.png') -52px 0px; 
+}
+#insta{
+  background: url('/images/bg-icon-follow-list.png') -97px 0px;
+}
+#line{
+  background: url('/images/bg-icon-follow-list.png') -143px 0px; 
+}
+#zalo{
+  background: url('/images/bg-icon-follow-list.png') -190px 0px; 
+}
 //example responsive css
 @media (min-width: $screen-sm-min) {
   //mobile lanscape
