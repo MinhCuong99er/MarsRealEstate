@@ -1,17 +1,61 @@
 /*---------- example css ----------*/
+.c-title {
+  background: url('/images/bg_h3_line.jpg') repeat-x scroll left center rgba(0, 0, 0, 0);
+  height: 60px;
+  text-align: center;
+  width: 100%;
+  h2 {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    span {
+      z-index: 99;
+      line-height: 4rem;
+      background-color: #fdfcf0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
 
+.swiper {
+  .swiper-button-prev, .swiper-button-next {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    color: $color-white;
+  }
+  .swiper-button-prev {
+    margin-left: 20px;
+  }
+  .swiper-button-next {
+    margin-right: 20px;
+  }
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      background-color: rgba(255,255,255,.5);
+      width: 30px;
+      height: 3px;
+      position: relative;
+      @include border-radius(0);
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $color-white;
+    }
+  }
+}
 //example responsive css
 @media (min-width: $screen-sm-min) {
   //mobile lanscape
-  
 }
 @media (min-width: $screen-md-min) {
   //ipad portrait
-  
 }
 @media (min-width: $screen-lg-min) {
   //ipad lanscape & pc 1024x768px
-
 }
 @media (min-width: $screen-xl-min) {
   //pc & mac 1280px grow up
