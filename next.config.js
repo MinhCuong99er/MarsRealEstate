@@ -10,6 +10,22 @@ if (process.env.NODE_ENV === 'production') {
   dotenv.config()
 }
 
+const ENV_KEYS = [
+  'NODE_ENV',
+  'BASE_URL',
+  'API_URL',
+  'IMAGE_URL',
+  'APP_FAVICON',
+  'APP_IMAGE',
+  'MAX_DISTANCE_NEAREST_VOUCHER',
+]
+const ENV_OBJ = {}
+if (isProd) {
+  ENV_KEYS.forEach((k) => (ENV_OBJ[k] = process.env[k]))
+} else {
+  Object.assign(ENV_OBJ, process.env)
+}
+
 module.exports = {
   // Use the CDN in production and localhost for development.
   // assetPrefix: isProd ? `${process.env.BASE_URL}` : '',
@@ -67,7 +83,7 @@ module.exports = {
   },
   publicRuntimeConfig: {
     // Will be available on both server and client
-    ...process.env,
+    ...ENV_OBJ,
   },
   webpack: (config, { isServer }) => {
     if (isServer) {
