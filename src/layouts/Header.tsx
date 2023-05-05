@@ -93,11 +93,11 @@ const Header: FC<HeaderProps> = (props: HeaderProps) => {
                 <i className="bi bi-ticket-detailed"></i>
                 <span>Vé của tôi</span>
               </Nav.Link>
-              <Nav.Link href="/login" className={`${router.pathname === '/login' ? 'is-active' : ''}`}>
+              <Nav.Link href="/auth/login" className={`${router.pathname === '/auth/login' ? 'is-active' : ''}`}>
                 <i className="bi bi-ticket-detailed"></i>
                 <span>Đăng nhập</span>
               </Nav.Link>
-              <Nav.Link href="/register" className={`${router.pathname === '/register' ? 'is-active' : ''}`}>
+              <Nav.Link href="/auth/register" className={`${router.pathname === '/auth/register' ? 'is-active' : ''}`}>
                 <i className="bi bi-person-plus-fill"></i>
                 <span>Đăng ký</span>
               </Nav.Link>

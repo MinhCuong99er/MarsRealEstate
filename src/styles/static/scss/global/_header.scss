@@ -46,6 +46,8 @@
     // align-items: center;
     .container {
       a {
+        color: #212529;
+        font-weight: 700;
         &::after {
           display: none;
         }
