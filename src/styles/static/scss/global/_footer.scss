@@ -16,7 +16,7 @@
   border-bottom: 2px solid #222;
 }
 
-.footer-policy ul, 
+.footer-policy ul,
 .footer-policy ul li {
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@
   list-style-type: none;
 }
 
-.footer-policy .cgv-premission{
+.footer-policy .cgv-premission {
   background: url('/images/cong-thuong.PNG') no-repeat scroll top left transparent;
   width: 200px;
   height: 70px;
@@ -36,21 +36,20 @@
   padding: 20px 0;
 }
 
-.footer-address  h3,
+.footer-address h3,
 .footer-policy h3 {
   font-size: 18px;
 }
 
-.footer-address  p {
+.footer-address p {
   margin: 0;
   font-size: 14px;
 }
 
-.footer-address 
-.logo-cgv {
+.footer-address .logo-cgv {
   background-image: url('/images/logo-cj-cgv.jpg');
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-position: left;
 }
 
@@ -60,32 +59,32 @@
   background-repeat: repeat-x;
   background-size: contain;
 }
-.icon-follow ul li{
+.icon-follow ul li {
   display: inline;
 }
-.zoom-icon{
+.zoom-icon {
   display: inline-block;
   width: 43px;
   height: 43px;
 }
-.zoom-icon:hover{
+.zoom-icon:hover {
   transition: 0.2s;
   transform: scale(1.4);
 }
-#fb{
-  background: url('/images/bg-icon-follow-list.png') -6px 0px; 
+#fb {
+  background: url('/images/bg-icon-follow-list.png') -6px 0px;
 }
-#youtube{
-  background: url('/images/bg-icon-follow-list.png') -52px 0px; 
+#youtube {
+  background: url('/images/bg-icon-follow-list.png') -52px 0px;
 }
-#insta{
+#insta {
   background: url('/images/bg-icon-follow-list.png') -97px 0px;
 }
-#line{
-  background: url('/images/bg-icon-follow-list.png') -143px 0px; 
+#line {
+  background: url('/images/bg-icon-follow-list.png') -143px 0px;
 }
-#zalo{
-  background: url('/images/bg-icon-follow-list.png') -190px 0px; 
+#zalo {
+  background: url('/images/bg-icon-follow-list.png') -190px 0px;
 }
 //example responsive css
 @media (min-width: $screen-sm-min) {
