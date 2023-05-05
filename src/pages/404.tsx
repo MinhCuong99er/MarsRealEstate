@@ -1,17 +1,37 @@
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React, { FC } from 'react'
+import { isMobile } from 'react-device-detect'
 
-interface IPage404 {}
+interface PageErrorProps {
+  title: string
+}
 
-const Page404: FC<IPage404> = (props: IPage404) => {
-  const {} = props
+const PageError: FC<PageErrorProps> = (props: PageErrorProps) => {
+  const { title } = props
+  const router = useRouter()
   return (
-    <div className="d-flex flex-column justify-content-center align-items-center height-full-screen">
-      <div>
-        <img src="/images/404.png" width={350} />
+    <div className="c-error-page">
+      <div className="is-image">
+        <img src="/images/404.png" />
       </div>
-      <h1>Trang bạn tìm không tồn tại!</h1>
+      <div className="is-content">
+        <div className="container">
+          <h1>{title}</h1>
+          {isMobile ? (
+            <div className="is-btn-group">
+              <div className="c-btn is-back-btn" onClick={() => router.back()}>
+                Quay lại
+              </div>
+              <Link href="/">
+                <a className="c-btn">Trở về trang chủ</a>
+              </Link>
+            </div>
+          ) : null}
+        </div>
+      </div>
     </div>
   )
 }
 
-export default Page404
+export default PageError

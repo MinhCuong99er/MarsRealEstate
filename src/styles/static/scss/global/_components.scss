@@ -47,6 +47,20 @@
     }
   }
 }
+.btn-primary {
+  &:hover, &:active, &:focus {
+    background-color: $color-primary !important;
+    border-color: $color-primary !important;
+    box-shadow: none  !important;
+  }
+}
+.btn-secondary {
+  &:hover, &:active, &:focus {
+    background-color: $color-secondary !important;
+    border-color: $color-secondary  !important;
+    box-shadow: none  !important;
+  }
+}
 //example responsive css
 @media (min-width: $screen-sm-min) {
   //mobile lanscape

@@ -1,0 +1,24 @@
+.login {
+  width: 500px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: $color-white;
+  border: 1px solid #999;
+  .login-footer {
+    font-size: 16px;
+    a {
+      color: #007bff!important;
+    }
+  }
+}
+
+.register{
+  width: 500px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: white;
+  border: 1px solid #999;
+  label {
+    width: 100%;
+  }
+}

@@ -1,39 +1,49 @@
-import React, { Component } from 'react'
-import { observer, inject } from 'mobx-react'
-import RootStore from '@src/stores/RootStore'
+import React, { FC } from 'react'
+import Link from 'next/link'
 
-interface LoginProps {
-  store: RootStore
-}
+interface LoginProps {}
 
-@inject('store')
-@observer
-class Login extends Component<LoginProps> {
-  render() {
-    const { authStore } = this.props.store
-    return (
-      <div className="container">
-        <div className="row mt-4">
-          <div className="col-md-4 offset-md-4">
-            <div className="login">
-              <button
-                disabled={this.props.store.loading}
-                className="btn btn-primary"
-                onClick={() =>
-                  authStore.setAuth({
-                    token: 's',
-                    auth: { id: 1, name: 'phong' },
-                  })
-                }
-              >
-                {this.props.store.loading ? <i className="fa fa-gear fa-spin" /> : null} Login
-              </button>
-            </div>
+const Login: FC<LoginProps> = (props: LoginProps) => {
+  const {} = props
+  const msgErr = ''
+  return (
+    <div className="login rounded">
+      <div className="login-header">
+        <h2 className="text-center w-100 alert-link">Đăng Nhập</h2>
+      </div>
+      <p className="mb-0 ml-4 text-center" style={{ color: 'red' }}>
+        {msgErr}
+      </p>
+      <div className="login-body my-3">
+        <form>
+          <div className="form-group my-4">
+            <input type="email" className="form-control" placeholder="Email" />
           </div>
+          <div className="form-group my-2">
+            <input type="password" className="form-control" placeholder="Mật khẩu" />
+          </div>
+          <div className="form-group my-4">
+            <button type="submit" className="btn btn-danger btn-block btn-lg w-100">
+              Đăng nhập
+            </button>
+          </div>
+        </form>
+      </div>
+      <div className="login-footer">
+        <div>
+          <Link href="/auth/forgot-password" className="text-primary">
+            Quên mật khẩu?
+          </Link>
+        </div>
+        <div>
+          Bạn chưa có tài khoản?{' '}
+          <Link href="/auth/register" className="text-primary">
+            Đăng ký
+          </Link>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default Login

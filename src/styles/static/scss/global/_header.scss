@@ -8,46 +8,32 @@
 
 .c-header {
   .c-header-top {
+    height: 32px;
     .navbar {
       float: right;
-      .nav {
-        li {
-          a {
-            text-decoration: none;
-            color: #333;
-            font-size: 16px;
-            font-weight: 400;
-            i {
-              margin-right: 7px;
-            }
-            span {
-              display: inline-block;
-            }
+    }
+    .container {
+      justify-content: flex-end;
+      .navbar-nav {
+        align-items: center;
+        a {
+          font-size: 16px;
+          color: $color-black;
+          padding: 8px 16px;
+          &.is-active {
+            color: red;
           }
-          &:last-child {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+          i {
+            margin-right: 5px;
           }
-          .btn-toolbar {
-            .btn-group {
-              button {
-                padding: 0 8px;
-                border: 0;
-                &:focus {
-                  box-shadow: 0 !important;
-                }
-                &:first-child {
-                  @include border-radius(16% 0 0 16%);
-                  background-color: $color-secondary;
-                }
-                &:last-child {
-                  @include border-radius(0 16% 16% 0);
-                  background-color: gray;
-                }
-              }
-            }
+          span {
+
           }
+        }
+      }
+      .btn-group {
+        button {
+          padding: 0 12px;
         }
       }
     }

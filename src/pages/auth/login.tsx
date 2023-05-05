@@ -8,7 +8,7 @@ import withLayout from '@src/lib/withLayout'
 import PageLoading from '@src/helpers/PageLoading'
 import { withStaticProps } from '@src/helpers/wrapperProps'
 
-const PageViewHandler = dynamic(() => import('@src/components/home'), {
+const PageViewHandler = dynamic(() => import('@src/components/Auth/Login'), {
   ssr: false,
   loading: () => <PageLoading />,
 })
@@ -20,7 +20,7 @@ const Index: React.FC<IndexProps> = () => {
     <Layout>
       <>
         <Helmet
-          title="Trang chủ"
+          title="Đăng nhập"
           url={`${Config.publicRuntimeConfig.BASE_URL}`}
           image={`${Config.publicRuntimeConfig.APP_IMAGE}`}
         />
