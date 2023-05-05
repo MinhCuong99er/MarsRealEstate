@@ -71,6 +71,13 @@
   list-style: none;
 }
 
+.menu .list-menu a {
+  color: white !important;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
 .show-menu:hover .menu {
   display: block;
 }

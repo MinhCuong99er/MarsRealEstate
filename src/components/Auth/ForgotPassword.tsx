@@ -8,7 +8,7 @@ const ForgotPassword: FC<ForgotPasswordProps> = (props: ForgotPasswordProps) => 
   return (
     <div className="login rounded">
       <div className="login-header">
-        <h2 className="text-center w-100 font-weight-bold">Lấy lại mật khẩu</h2>
+        <h2 className="text-center w-100 alert-link">Lấy lại mật khẩu</h2>
       </div>
       <p className="mb-0 ml-4 text-center" style={{ color: 'red' }}>
         {msgErr}

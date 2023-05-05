@@ -49,30 +49,30 @@ module.exports = withLess({
 		// path: '/_next/image',
 		loader: 'default',
 	},
-	// i18n: {
-	//   // These are all the locales you want to support in
-	//   // your application
-	//   locales: ['en', 'vi'],
-	//   // This is the default locale you want to be used when visiting
-	//   // a non-locale prefixed path e.g. `/hello`
-	//   defaultLocale: 'vi',
-	//   // This is a list of locale domains and the default locale they
-	//   // should handle (these are only required when setting up domain routing)
-	//   /* domains: [
-	//     {
-	//       domain: 'example.com',
-	//       defaultLocale: 'en-US',
-	//     },
-	//     {
-	//       domain: 'example.nl',
-	//       defaultLocale: 'nl-NL',
-	//     },
-	//     {
-	//       domain: 'example.fr',
-	//       defaultLocale: 'fr',
-	//     },
-	//   ], */
-	// },
+	i18n: {
+	  // These are all the locales you want to support in
+	  // your application
+	  locales: ['en', 'vi'],
+	  // This is the default locale you want to be used when visiting
+	  // a non-locale prefixed path e.g. `/hello`
+	  defaultLocale: 'vi',
+	  // This is a list of locale domains and the default locale they
+	  // should handle (these are only required when setting up domain routing)
+	  /* domains: [
+	    {
+	      domain: 'example.com',
+	      defaultLocale: 'en-US',
+	    },
+	    {
+	      domain: 'example.nl',
+	      defaultLocale: 'nl-NL',
+	    },
+	    {
+	      domain: 'example.fr',
+	      defaultLocale: 'fr',
+	    },
+	  ], */
+	},
 	serverRuntimeConfig: {
 		TOKEN_SECRET: 'c540612b-2391-4b3a-83ae-a4ad5a90aa76',
 		SECRET_KEY_CONFIRM: 'd54b74ed-2f5e-4cc4-811d-54e413b8868e',

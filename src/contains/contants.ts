@@ -1,3 +1,5 @@
+import { LANGUAGE } from '@src/interfaces/enums'
+
 export const OPTIONS_POINT = {
   '*-*': 'TẤT CẢ',
   '1-10000': 'Từ 1 đến 10.000 điểm',
@@ -41,3 +43,5 @@ export const RULE_EMAIL = {
   pattern: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
   message: 'Địa chỉ email không phù hợp',
 }
+
+export const LANGUAGE_ARRAY = [LANGUAGE.VI, LANGUAGE.EN]

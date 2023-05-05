@@ -88,3 +88,8 @@ export enum PAYMENT_METHOD_SHOW {
   COD = 'Thanh toán khi nhận hàng',
   ONLINE = 'Thanh toán online',
 }
+
+export enum LANGUAGE {
+  VI = 'vi',
+  EN = 'en',
+}

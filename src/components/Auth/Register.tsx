@@ -9,7 +9,7 @@ const Register: FC<RegisterProps> = (props: RegisterProps) => {
   return (
     <div className="register rounded">
       <div className="register-header">
-        <h2 className="text-center w-100 font-weight-bold">Đăng ký</h2>
+        <h2 className="text-center w-100 alert-link">Đăng ký</h2>
       </div>
       <p className="err mb-1 text-center" style={{ color: 'red' }}>
         {Errmsg}

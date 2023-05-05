@@ -2,6 +2,8 @@ import React, { FC } from 'react'
 import { Button, ButtonGroup, Container, Nav, NavLink, Navbar } from 'react-bootstrap'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { LANGUAGE } from '@src/interfaces/enums'
+import { LANGUAGE_ARRAY } from '@src/contains/contants'
 
 interface HeaderProps {}
 
@@ -10,6 +12,10 @@ const Header: FC<HeaderProps> = (props: HeaderProps) => {
   const router = useRouter()
   const user = {
     name: '',
+  }
+
+  const onChangeLanguage = (lang: LANGUAGE) => {
+    router.push(router.asPath, undefined, { locale: lang })
   }
 
   return (
@@ -97,8 +103,15 @@ const Header: FC<HeaderProps> = (props: HeaderProps) => {
               </Nav.Link>
             </Nav>
             <ButtonGroup>
-              <Button variant="secondary">VN</Button>
-              <Button variant="primary">EN</Button>
+              {LANGUAGE_ARRAY.map((item) => (
+                <Button
+                  key={`language${item}`}
+                  variant={router?.locale == item ? 'secondary' : 'primary'}
+                  onClick={() => onChangeLanguage(item)}
+                >
+                  {item.toUpperCase()}
+                </Button>
+              ))}
             </ButtonGroup>
           </Container>
         </Navbar>
