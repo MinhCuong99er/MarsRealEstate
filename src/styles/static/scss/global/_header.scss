@@ -38,6 +38,14 @@
       }
     }
   }
+  .c-header-bottom {
+    background-image: url('/images/bg-top.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .mr-5px {
@@ -67,7 +75,7 @@
 }
 .menu .list-menu a:hover,
 .menu .list-menu a:active {
-  color: red;
+  color: red !important;
   list-style: none;
 }
 
