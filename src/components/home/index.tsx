@@ -1,9 +1,22 @@
 import React, { FC } from 'react'
+import { Container } from 'react-bootstrap'
+import HomeBanner from './HomeBanner'
+import HomeEvent from './HomeEvent'
+import HomeMovie from './HomeMovie'
 
-interface PageProps {}
+interface HomeProps {}
 
-const Page: FC<PageProps> = () => {
-  return <div />
+const Home: FC<HomeProps> = (props: HomeProps) => {
+  const {} = props
+  return (
+    <React.Fragment>
+      <Container>
+        <HomeBanner />
+        <HomeEvent />
+        <HomeMovie />
+      </Container>
+    </React.Fragment>
+  )
 }
 
-export default Page
+export default Home

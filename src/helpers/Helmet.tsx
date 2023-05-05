@@ -1,12 +1,12 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
+import { Helmet, HelmetProps } from 'react-helmet'
 import { useRouter } from 'next/router'
 import getConfig from 'next/config'
 import i18n from '../locales'
 
 const { publicRuntimeConfig } = getConfig()
 
-interface HelmetHeaderProps {
+interface HelmetHeaderProps extends HelmetProps {
   title?: string
   keywords?: string
   descriptions?: string
@@ -15,12 +15,12 @@ interface HelmetHeaderProps {
   url?: string
   image?: string
   favicon?: string
-  children?: React.ReactElement
+  children?: Partial<any>
 }
 
 const HelmetHeader: React.FC<HelmetHeaderProps> = (props: HelmetHeaderProps) => {
   const { locale } = useRouter()
-  const { title, keywords, descriptions } = props
+  const { title, keywords, descriptions, children } = props
   const defaultTitle = (i18n[locale] || {}).defaultTitle || ''
   const defaultKeywords = (i18n[locale] || {}).defaultKeywords || ''
   const defaultDescription = (i18n[locale] || {}).defaultDescription || ''
@@ -59,7 +59,7 @@ const HelmetHeader: React.FC<HelmetHeaderProps> = (props: HelmetHeaderProps) => 
         <meta property="og:image:height" content="630" />
         <link rel="canonical" href={props.url || defaultUrl} />
         <link rel="icon" href={`${props.favicon || favicon}`} />
-        {props?.children}
+        {children}
       </Helmet>
     </>
   )
