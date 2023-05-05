@@ -43,8 +43,18 @@
     background-repeat: repeat-x;
     background-size: contain;
     height: 100px;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    .container {
+      a {
+        &::after {
+          display: none;
+        }
+      }
+      .c-search-buy-infor {
+
+      }
+    }
   }
 }
 

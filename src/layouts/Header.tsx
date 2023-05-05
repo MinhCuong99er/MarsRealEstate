@@ -204,34 +204,36 @@ const Header: FC<HeaderProps> = (props: HeaderProps) => {
           </nav>
         </div>
         <div className="c-header-bottom">
-          <Navbar variant="light" className="c-header-top">
+          <Navbar variant="light">
             <Container>
               <Navbar.Brand href="/">
                 <img src={'/images/cgvlogo.png'} width="150" height="70" alt="logo" />
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Nav id="basic-navbar-nav">
-                <NavDropdown title="PHIM" id="movie">
-                  <NavDropdown.Item href="/movie/movie_playing">Phim Đang Chiếu</NavDropdown.Item>
-                  <NavDropdown.Item href="/movie/movie_upcoming">Phim Sắp Chiếu</NavDropdown.Item>
-                </NavDropdown>
-                <NavDropdown title="RẠP CGV" id="theater">
-                  <NavDropdown.Item href="/theater/theater_all">Tất Cả Các Rạp</NavDropdown.Item>
-                  <NavDropdown.Item href="/theater/theater_special">Rạp Đặc Biệt</NavDropdown.Item>
-                  <NavDropdown.Item href="/theater/theater_upcoming">Rạp Sắp Mở</NavDropdown.Item>
-                </NavDropdown>
-                <NavDropdown title="THÀNH VIÊN" id="member">
-                  <NavDropdown.Item href="/member/account">Tài Khoản CGV</NavDropdown.Item>
-                  <NavDropdown.Item href="/member/right">Quyền Lợi</NavDropdown.Item>
-                </NavDropdown>
-                <NavDropdown title="CULTUREPLEX" id="cultureplex">
-                  <NavDropdown.Item href="/quay-online"> Quầy Online</NavDropdown.Item>
-                  <NavDropdown.Item href="/event">Sự Kiện & Vé Nhóm</NavDropdown.Item>
-                  <NavDropdown.Item href="/cgv-restaurant">Nhà Hàng CGV</NavDropdown.Item>
-                  <NavDropdown.Item href="/gift">Thẻ Quà Tặng</NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-              <div className="search-buy-infor">
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                  <NavDropdown title="PHIM" id="movie">
+                    <NavDropdown.Item href="/movie/movie_playing">Phim Đang Chiếu</NavDropdown.Item>
+                    <NavDropdown.Item href="/movie/movie_upcoming">Phim Sắp Chiếu</NavDropdown.Item>
+                  </NavDropdown>
+                  <NavDropdown title="RẠP CGV" id="theater">
+                    <NavDropdown.Item href="/theater/theater_all">Tất Cả Các Rạp</NavDropdown.Item>
+                    <NavDropdown.Item href="/theater/theater_special">Rạp Đặc Biệt</NavDropdown.Item>
+                    <NavDropdown.Item href="/theater/theater_upcoming">Rạp Sắp Mở</NavDropdown.Item>
+                  </NavDropdown>
+                  <NavDropdown title="THÀNH VIÊN" id="member">
+                    <NavDropdown.Item href="/member/account">Tài Khoản CGV</NavDropdown.Item>
+                    <NavDropdown.Item href="/member/right">Quyền Lợi</NavDropdown.Item>
+                  </NavDropdown>
+                  <NavDropdown title="CULTUREPLEX" id="cultureplex">
+                    <NavDropdown.Item href="/quay-online"> Quầy Online</NavDropdown.Item>
+                    <NavDropdown.Item href="/event">Sự Kiện & Vé Nhóm</NavDropdown.Item>
+                    <NavDropdown.Item href="/cgv-restaurant">Nhà Hàng CGV</NavDropdown.Item>
+                    <NavDropdown.Item href="/gift">Thẻ Quà Tặng</NavDropdown.Item>
+                  </NavDropdown>
+                </Nav>
+              </Navbar.Collapse>
+              <div className="c-search-buy-infor">
                 <Link href="#">
                   <a className="news">
                     <img src={'/images/kenhcine.gif'} alt="" />
