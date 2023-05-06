@@ -1,28 +1,31 @@
 import React, { FC, useState } from 'react'
 import Link from 'next/link'
 import { Button, Form } from 'react-bootstrap'
+import { RULE_EMAIL } from '@src/contains/contants'
+import { FormLogin } from '@src/interfaces/Auth'
 
 interface LoginProps {}
 
 const Login: FC<LoginProps> = (props: LoginProps) => {
   const {} = props
-  const msgErr = ''
-  const [form, setForm] = useState<any>({})
-  const [errors, setErrors] = useState<any>({})
+  const [form, setForm] = useState<Partial<FormLogin>>({})
+  const [errors, setErrors] = useState<Partial<FormLogin>>({})
 
   const setField = (field, value) => {
     setForm({ ...form, [field]: value })
     // @ts-ignore
-    if (!errors[field]) {
+    if (errors[field]) {
       setErrors({ ...errors, [field]: null })
     }
   }
 
   const validateForm = () => {
     const { email, password } = form
-    const newErrors: any = {}
+    const newErrors: Partial<FormLogin> = {}
     if (!email) {
       newErrors.email = 'Please fill email'
+    } else if (email && !RULE_EMAIL.pattern.test(email)) {
+      newErrors.email = 'Please validate email'
     }
     if (!password) {
       newErrors.password = 'Please fill password'
@@ -42,42 +45,6 @@ const Login: FC<LoginProps> = (props: LoginProps) => {
 
   return (
     <>
-      <div className="login rounded">
-        <div className="login-header">
-          <h2 className="text-center w-100 alert-link">Đăng Nhập</h2>
-        </div>
-        <p className="mb-0 ml-4 text-center" style={{ color: 'red' }}>
-          {msgErr}
-        </p>
-        <div className="login-body my-3">
-          <form>
-            <div className="form-group my-4">
-              <input type="email" className="form-control" placeholder="Email" />
-            </div>
-            <div className="form-group my-2">
-              <input type="password" className="form-control" placeholder="Mật khẩu" />
-            </div>
-            <div className="form-group my-4">
-              <button type="submit" className="btn btn-danger btn-block btn-lg w-100">
-                Đăng nhập
-              </button>
-            </div>
-          </form>
-        </div>
-        <div className="login-footer">
-          <div>
-            <Link href="/auth/forgot-password" className="text-primary">
-              Quên mật khẩu?
-            </Link>
-          </div>
-          <div>
-            Bạn chưa có tài khoản?{' '}
-            <Link href="/auth/register" className="text-primary">
-              Đăng ký
-            </Link>
-          </div>
-        </div>
-      </div>
       <div className="c-form">
         <div className="c-form__title">
           <h2>Đăng Nhập</h2>

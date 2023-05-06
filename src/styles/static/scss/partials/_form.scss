@@ -14,6 +14,13 @@
   }
   &__body {
     margin: 20px 0;
+    form {
+      button {
+        &:focus, &:active {
+          box-shadow: none;
+        }
+      }
+    }
   }
   &__bottom {
     margin-top: 20px;

@@ -1,19 +1,5 @@
 import { LANGUAGE } from '@src/interfaces/enums'
 
-export const OPTIONS_POINT = {
-  '*-*': 'TẤT CẢ',
-  '1-10000': 'Từ 1 đến 10.000 điểm',
-  '10000-100000': 'Từ 10.000 đến 100.000 điểm',
-  '100000-9000000000': 'Từ 100.000 điểm trở lên',
-}
-
-export const OPTIONS_MONEY = {
-  '*-*': 'TẤT CẢ',
-  '1-10000': 'Từ 1 đến 10.000 Vnđ',
-  '10000-100000': 'Từ 10.000 đến 100.000 Vnđ',
-  '100000-9000000000': 'Từ 100.000 Vnđ trở lên',
-}
-
 export const DEFAULT_WAIT_SECONDS = 500
 export const DEFAULT_ERROR_MESSAGE = 'Hệ thống đang bận vui lòng thực hiện sau'
 
@@ -40,8 +26,8 @@ export const RULE_OTP = {
 }
 
 export const RULE_EMAIL = {
-  pattern: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-  message: 'Địa chỉ email không phù hợp',
+  pattern: /[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+.+.[A-Za-z]{2,4}/,
+  message: 'Email không đúng định dạng.',
 }
 
 export const LANGUAGE_ARRAY = [LANGUAGE.VI, LANGUAGE.EN]
