@@ -7,6 +7,7 @@
 }
 
 .c-header {
+  margin-bottom: 20px;
   .c-header-top {
     height: 32px;
     .navbar {
@@ -51,6 +52,34 @@
         &::after {
           display: none;
         }
+      }
+      .dropdown {
+        .dropdown-menu {
+          &.show {
+            padding: 5px;
+            @include border-radius(0);
+            background-image: url('/images/bg_menu_hover.png');
+            .nav-child {
+              border: 2px solid #999;
+              padding: 8px 10px;
+              a {
+                color: $color-white;
+                font-size: 16px;
+                font-weight: 700;
+                &:hover {
+                  color: red;
+                  background-color: transparent;
+                }
+              }
+            }
+          }
+        }
+      }
+      .navbar-text {
+        color: #212529;
+        font-weight: 700;
+        padding: 0 8px;
+        cursor: pointer;
       }
       .c-search-buy-infor {
       }
@@ -139,6 +168,27 @@
   align-content: center;
   margin-top: 35px;
 }
+.popover-header {
+  padding: 5px;
+  @include border-radius(0);
+  background-image: url('/images/bg_menu_hover.png');
+  .popover-arrow {
+    display: none;
+  }
+  .popover-body {
+    border: 2px solid #999;
+    padding: 8px 10px;
+    a {
+      color: $color-white;
+      font-size: 16px;
+      font-weight: 700;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
+
 //example responsive css
 @media (min-width: $screen-sm-min) {
   //mobile lanscape

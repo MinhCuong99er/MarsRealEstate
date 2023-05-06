@@ -124,12 +124,6 @@ export default class ProductStore {
 
   @computed get isChangeParams() {
     return this.params
-    /* return (
-      // eslint-disable-next-line no-prototype-builtins
-      this.params.hasOwnProperty('fromPoint') &&
-      // eslint-disable-next-line no-prototype-builtins
-      this.params.hasOwnProperty('toPoint')
-    ) */
   }
 
   @computed get activeProductArr() {
