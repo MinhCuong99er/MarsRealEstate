@@ -3,7 +3,6 @@ import { create } from 'mobx-persist'
 import CartStore, { CartHydration } from './cart.store'
 import AuthStore, { AuthHydration } from './auth.store'
 import VoucherStore, { VoucherHydration } from './voucher.store'
-import CharityStore, { CharityHydration } from './charity.store'
 import GlobalStore, { GlobalHydration } from './global.store'
 import ProductStore, { ProductHydration } from './product.store'
 
@@ -23,7 +22,6 @@ export type RootStoreHydration = {
   cartStore?: CartHydration
   authStore?: AuthHydration
   voucherStore?: VoucherHydration
-  charityStore?: CharityHydration
   globalStore?: GlobalHydration
   productStore?: ProductHydration
 }
@@ -32,7 +30,6 @@ export default class RootStore {
   cartStore: CartStore
   authStore: AuthStore
   voucherStore: VoucherStore
-  charityStore: CharityStore
   globalStore: GlobalStore
   productStore: ProductStore
   // sizeSwitcherStore: ReturnType<typeof sizeSwitcherStoreFactory>;
@@ -42,7 +39,6 @@ export default class RootStore {
     this.cartStore = new CartStore(this)
     this.authStore = new AuthStore(this)
     this.voucherStore = new VoucherStore(this)
-    this.charityStore = new CharityStore(this)
     this.globalStore = new GlobalStore(this)
     this.productStore = new ProductStore(this)
     if (isClient) {
@@ -71,9 +67,6 @@ export default class RootStore {
     }
     if (data.voucherStore) {
       this.voucherStore.hydrate(data.voucherStore)
-    }
-    if (data.charityStore) {
-      this.charityStore.hydrate(data.charityStore)
     }
     if (data.globalStore) {
       this.globalStore.hydrate(data.globalStore)
