@@ -16,3 +16,11 @@ export interface FormRegister {
   name: string
   terms: boolean
 }
+
+export interface FormChangeInfo {
+  name: string
+  email: string
+  phone: number
+  address: string
+  province: string
+}
