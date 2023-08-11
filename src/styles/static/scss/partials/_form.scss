@@ -16,7 +16,8 @@
     margin: 20px 0;
     form {
       button {
-        &:focus, &:active {
+        &:focus,
+        &:active {
           box-shadow: none;
         }
       }
