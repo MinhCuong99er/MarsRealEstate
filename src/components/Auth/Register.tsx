@@ -24,20 +24,20 @@ const Register: FC<RegisterProps> = (props: RegisterProps) => {
     const { email, password, passwordConfirm, name } = form as FormRegister
     const newErrors: Partial<FormRegister> = {}
     if (!email) {
-      newErrors.email = 'Please fill email'
+      newErrors.email = 'Vui lòng nhập email!'
     } else if (email && !RULE_EMAIL.pattern.test(email)) {
-      newErrors.email = 'Please validate email'
+      newErrors.email = 'Email không đúng định dạng!'
     }
     if (!name) {
-      newErrors.name = 'Please fill name'
+      newErrors.name = 'Vui lòng nhập tên'
     }
     if (!password) {
-      newErrors.password = 'Please fill password'
+      newErrors.password = 'Vui lòng nhập mật khẩu!'
     }
     if (!passwordConfirm) {
-      newErrors.passwordConfirm = 'Please fill password confirm'
+      newErrors.passwordConfirm = 'Vui lòng nhập lại mật khẩu!'
     } else if (password && passwordConfirm && password != passwordConfirm) {
-      newErrors.passwordConfirm = 'Password confirm no match'
+      newErrors.passwordConfirm = 'Mật khẩu và mật khẩu nhập lại không khớp!'
     }
     return newErrors
   }
@@ -59,7 +59,7 @@ const Register: FC<RegisterProps> = (props: RegisterProps) => {
 
   return (
     <>
-      <div className="register rounded">
+      <div className="register rounded d-none">
         <div className="register-header">
           <h2 className="text-center w-100 alert-link">Đăng ký</h2>
         </div>
@@ -141,7 +141,7 @@ const Register: FC<RegisterProps> = (props: RegisterProps) => {
       </div>
       <div className="c-form">
         <div className="c-form__title">
-          <h2>Lấy lại mật khẩu</h2>
+          <h2>Đăng ký</h2>
         </div>
         <div className="c-form__body">
           <Form>

@@ -23,12 +23,12 @@ const Login: FC<LoginProps> = (props: LoginProps) => {
     const { email, password } = form
     const newErrors: Partial<FormLogin> = {}
     if (!email) {
-      newErrors.email = 'Please fill email'
+      newErrors.email = 'Vui lòng nhập email!'
     } else if (email && !RULE_EMAIL.pattern.test(email)) {
-      newErrors.email = 'Please validate email'
+      newErrors.email = 'Email không đúng định dạng!'
     }
     if (!password) {
-      newErrors.password = 'Please fill password'
+      newErrors.password = 'Vui lòng nhập mật khẩu!'
     }
     return newErrors
   }

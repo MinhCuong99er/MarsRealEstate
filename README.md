@@ -1,41 +1,51 @@
-## Deploy your own
+# Getting Started with Create Next App
 
-cấu hình trong file .env
+This project was bootstrapped with [Create Next App]
 
-# Link web, !!important, thay đổi trước khi build
+### Prerequisites
 
-# lấy đường dẫn cdn css,images....
+- [Install node](https://nodejs.org/en/) and it will also install npm.
 
-BASE_URL=''
 
-# Link api
+- After that, install yarn.
 
-API_URL=''
+  ```
+  npm install -g yarn
+  ```
 
-# Link favicon
+  then check it
 
-APP_FAVICON=$BASE_URL/favicon.ico
+  ```
+  node -v
 
-# Default og image
+  // v14.16.1
 
-ảnh mặc định
-APP_IMAGE='https://mbbankplus.mpoint.vn/images/logo-mpoint.png'
+  yarn -v
 
-# Facebook
+  // 1.22.5
+  ```
 
-hiện tại chưa dùng
-FACEBOOK_APP_ID=""
-FACEBOOK_PAGE_ID=""
+### Installing
 
-## How to use
+- Clone project
+  ```
+  git clone git@github.com:MinhCuong99er/duan2021-typescript.git && cd duan2021-typescript
+  ```
+- Install dependencies
+  ```
+  yarn
+  ```
 
-````build
-yarn build
-```run
-yarn start
-````
+- Run project
+  ```
+  yarn start
+  ```
 
-## Note
+  Runs the app in the development mode.\
+- Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
-Thay đổi port ở trong package.json
-"start": "next start -p 3006"
+  The page will reload if you make edits.\
+  You will also see any lint errors in the console.
+
+### Live demo: 
+Đang cập nhật

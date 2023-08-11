@@ -22,17 +22,17 @@ const ForgotPassword: FC<ForgotPasswordProps> = (props: ForgotPasswordProps) => 
     const { email, password, passwordConfirm } = form
     const newErrors: Partial<FormForgotPassword> = {}
     if (!email) {
-      newErrors.email = 'Please fill email'
+      newErrors.email = 'Vui lòng nhập email!'
     } else if (email && !RULE_EMAIL.pattern.test(email)) {
-      newErrors.email = 'Please validate email'
+      newErrors.email = 'Email không đúng định dạng!'
     }
     if (!password) {
-      newErrors.password = 'Please fill password'
+      newErrors.password = 'Vui lòng nhập mật khẩu mới!'
     }
     if (!passwordConfirm) {
-      newErrors.passwordConfirm = 'Please fill password confirm'
+      newErrors.passwordConfirm = 'Vui lòng nhập lại mật khẩu!'
     } else if (password && passwordConfirm && password != passwordConfirm) {
-      newErrors.passwordConfirm = 'Password confirm no match'
+      newErrors.passwordConfirm = 'Mật khẩu mới và mật khẩu nhập lại không khớp!'
     }
     return newErrors
   }
