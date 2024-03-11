@@ -106,7 +106,7 @@ const Header: FC<HeaderProps> = (props: HeaderProps) => {
             <ButtonGroup>
               {LANGUAGE_ARRAY.map((item) => (
                 <Button
-                  key={`language${item}`}
+                  key={`language-${item}`}
                   variant={router?.locale == item ? 'secondary' : 'primary'}
                   onClick={() => onChangeLanguage(item)}
                 >
