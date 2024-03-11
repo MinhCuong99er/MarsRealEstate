@@ -1,7 +1,7 @@
 import { enableStaticRendering } from 'mobx-react-lite'
 import React, { createContext, ReactNode, useContext } from 'react'
 import { Provider } from 'mobx-react'
-import RootStore, { RootStoreHydration } from '../stores/RootStore'
+import RootStore, { RootStoreHydration } from '@src/stores/RootStore'
 
 enableStaticRendering(typeof window === 'undefined')
 

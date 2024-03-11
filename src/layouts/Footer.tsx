@@ -101,7 +101,7 @@ const Footer: FC<FooterProps> = (props: FooterProps) => {
             <p>COPYRIGHT 2017 CJ CGV. All RIGHTS RESERVED .</p>
           </div>
         </div>
-        <div className="row" style={{ height: '100px' }}>
+        <div className="row" style={{ height: 100, marginRight: 0 }}>
           <div className="col-12 bg-footer"></div>
         </div>
       </div>

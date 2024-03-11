@@ -1,28 +1,31 @@
+/* eslint-disable */
+const fs = require('fs')
 const path = require('path')
 const dotenv = require('dotenv')
-const withLess = require('./src/lib/next-with-less')
-withLess.patchNext(require('next/dist/build/webpack/config/blocks/css'))
 
+const isProd = process.env.NODE_ENV === 'production'
 if (process.env.NODE_ENV === 'production') {
   dotenv.config({ path: path.resolve(process.cwd(), '.env.production') })
 } else {
   dotenv.config()
 }
 
-module.exports = withLess({
-  reactStrictMode: true,
-  output: 'export',
-  basePath: '/gh-pages-test',
-  lessLoaderOptions: {
-    // it's possible to use additionalData or modifyVars for antd theming
-    // read more @ https://ant.design/docs/react/customize-theme
-    // additionalData: (content) => `${content}\n@border-radius-base: 10px;`,
-
-    lessOptions: {
-      modifyVars: {
-        // "primary-color": "#9900FF",
-      },
-    },
+module.exports = {
+  // Use the CDN in production and localhost for development.
+  // assetPrefix: isProd ? `${process.env.BASE_URL}` : '',
+  // rewrites: async () => nextI18NextRewrites(localeSubpaths),
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: '/:slug*',
+  //       destination: '/:slug', // Matched parameters can be used in the destination
+  //     },
+  //   ];
+  // },
+  server: {
+    // Force the server to use TLSv1.2 or TLSv1.3 only and exclude any other protocols
+    secureProtocol: 'TLSv1_2_method',
+    ciphers: 'DEFAULT:!aNULL:!eNULL:!LOW:!EXPORT:!SSLv2:!MD5:!3DES:!SHA1',
   },
   images: {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
@@ -32,17 +35,16 @@ module.exports = withLess({
       'img.youtube.com',
       'storage.googleapis.com',
       'gravatar.com',
+      'admin.mpoint.vn',
       '632466.sgp1.digitaloceanspaces.com',
-      'media.meete.co',
     ],
+    // path: '/_next/image',
     loader: 'default',
   },
   i18n: {
-    // These are all the locales you want to support in
-    // your application
-    locales: ['en', 'vi'],
-    // This is the default locale you want to be used when visiting
-    // a non-locale prefixed path e.g. `/hello`
+    // These are all the locales you want to support in your application
+    locales: ['vi'],
+    // This is the default locale you want to be used when visiting a non-locale prefixed path e.g. `/hello`
     defaultLocale: 'vi',
   },
   serverRuntimeConfig: {
@@ -57,8 +59,7 @@ module.exports = withLess({
     if (isServer) {
       config.externals.push('jquery')
     }
-    config.resolve.fallback = { fs: false }
 
     return config
   },
-})
+}

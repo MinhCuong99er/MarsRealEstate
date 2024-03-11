@@ -1,6 +1,6 @@
 
 # FROM mhart/alpine-node as builder
-FROM node:12.22.3-alpine as builder
+FROM node:14.17.6-alpine as builder
 
 WORKDIR /app
 COPY . .

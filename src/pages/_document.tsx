@@ -1,14 +1,12 @@
 import { ReactElement, JSXElementConstructor, ReactFragment } from 'react'
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
 import { Helmet, HelmetData } from 'react-helmet'
-// import getConfig from 'next/config'
-import { GA_TRACKING_ID } from '../lib/gtag'
+import { GA_TRACKING_ID } from '@src/lib/gtag'
 
 interface MyDocumentProps {
   helmet: HelmetData
 }
 
-// const { publicRuntimeConfig } = getConfig()
 export default class MyDocument extends Document<MyDocumentProps> {
   static async getInitialProps(ctx: DocumentContext): Promise<{
     asPath: any
